@@ -1,0 +1,8 @@
+# Folder library Node.js
+node_modules
+
+# File sesi WhatsApp
+auth_info_baileys
+
+# File environment yang berisi rahasia
+.env
