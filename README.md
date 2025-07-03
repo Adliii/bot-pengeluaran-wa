@@ -8,7 +8,7 @@ Sebuah bot WhatsApp sederhana yang dibuat menggunakan **Node.js** dan **Baileys*
 
 * **Pencatatan Mudah**: Catat pengeluaran dengan format pesan yang simpel dan intuitif.
 * **Database Lokal**: Semua data pengeluaran disimpan secara persisten di dalam file `database.sqlite`, sepenuhnya offline dan aman.
-* **Pengingat Otomatis**: Mendapatkan pengingat otomatis setiap malam pukul **20:30 WIB** untuk mencatat pengeluaran.
+* **Pengingat Pintar**: Mendapatkan pengingat otomatis setiap malam pukul **20:30 WIB**, namun bot cukup pintar untuk **tidak mengirim pengingat** jika Anda sudah mencatat pengeluaran pada hari itu.
 * **Aman & Privat**: Konfigurasi rahasia seperti ID Grup disimpan dengan aman di laptop Anda menggunakan file `.env` dan tidak akan terunggah ke GitHub.
 * **Berjalan di Latar Belakang**: Dioptimalkan untuk berjalan secara terus-menerus di latar belakang menggunakan **PM2**, lengkap dengan fitur auto-start saat laptop menyala.
 
