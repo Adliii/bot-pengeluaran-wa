@@ -41,6 +41,22 @@ function insertExpense(data) {
     });
 }
 
+function hasTodaysExpense() {
+    return new Promise((resolve, reject) => {
+        const todayDate = new Date().toLocaleDateString('id-ID', { timeZone: 'Asia/Jakarta' });
+        const sql = 'SELECT COUNT(*) as count FROM pengeluaran WHERE tanggal = ?';
+        
+        db.get(sql, [todayDate], (err, row) => {
+            if (err) {
+                console.error("Gagal memeriksa database untuk pengeluaran hari ini.", err.message);
+                reject(err);
+            } else {
+                resolve(row.count > 0);
+            }
+        });
+    });
+}
+
 async function connectToWhatsApp() {
     const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys');
 
