@@ -28,14 +28,13 @@ Sebelum memulai, pastikan Anda sudah menginstall:
 Ikuti langkah-langkah ini untuk menjalankan bot di komputer baru.
 
 1.  **Clone Repositori**
-    Ganti `NAMA_USERNAME_ANDA` dan `NAMA_REPO_ANDA` dengan milik Anda.
     ```bash
-    git clone [https://github.com/NAMA_USERNAME_ANDA/NAMA_REPO_ANDA.git](https://github.com/NAMA_USERNAME_ANDA/NAMA_REPO_ANDA.git)
+    https://github.com/Adliii/bot-pengeluaran-wa.git
     ```
 
 2.  **Masuk ke Direktori Proyek**
     ```bash
-    cd NAMA_REPO_ANDA
+    cd bot-pengeluaran-wa.git
     ```
 
 3.  **Install Semua Dependensi**
